@@ -7,8 +7,6 @@ var appSecret = meta.config['wechat-share:appSecret'];
 var API = require('wechat-api');
 var api = new API(appId, appSecret);
 
-console.log(appId, appSecret);
-
 plugin.init = function (params, callback) {
     var app = params.router,
         middleware = params.middleware,
