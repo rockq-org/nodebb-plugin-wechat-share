@@ -1,0 +1,8 @@
+{
+  "name": "nodebb-plugin-wechat-share",
+  "version": "0.0.1",
+  "description": "A Plugin that for wechat",
+  "dependencies": {
+    "wechat-api": "^1.27.1"
+  }
+}

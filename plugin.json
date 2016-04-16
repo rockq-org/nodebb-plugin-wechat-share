@@ -1,0 +1,24 @@
+{
+    "id": "nodebb-plugin-wechat-share",
+    "name": "wechat share",
+    "description": "A Plugin for wechat",
+    "url": "",
+    "library": "./library.js",
+    "scripts": [
+        "static/main.js"
+    ],
+    "hooks": [
+        {
+            "hook": "static:app.load",
+            "method": "init"
+        },
+        {
+            "hook": "filter:admin.header.build",
+            "method": "addAdminNavigation"
+        }
+    ],
+    "staticDirs": {
+        "static": "./static"
+    },
+    "templates": "static/templates"
+}
