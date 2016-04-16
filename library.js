@@ -17,7 +17,7 @@ plugin.init = function (params, callback) {
 
     app.post('/api/wechat-sdk', function (req, res, next) {
         var url = req.body.url;
-
+ 
         var param = {
             debug: false,
             jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage'],
@@ -44,6 +44,19 @@ plugin.addAdminNavigation = function (header, callback) {
     });
 
     callback(null, header);
+};
+
+plugin.resetAPI = function (obj) {
+    if (obj.key == 'wechat-share:appId') {
+        appId = obj.value;
+    }
+
+    if (obj.key == 'wechat-share:appSecret') {
+        appSecret = obj.value;
+    }
+
+    if (appId && appSecret)
+        api = new API(appId, appSecret);
 };
 
 function renderAdmin(req, res, next) {

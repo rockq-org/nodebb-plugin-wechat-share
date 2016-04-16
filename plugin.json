@@ -2,7 +2,7 @@
     "id": "nodebb-plugin-wechat-share",
     "name": "wechat share",
     "description": "A Plugin for wechat",
-    "url": "",
+    "url": "https://github.com/rockq-org/nodebb-plugin-wechat-share",
     "library": "./library.js",
     "scripts": [
         "static/main.js"
@@ -15,6 +15,10 @@
         {
             "hook": "filter:admin.header.build",
             "method": "addAdminNavigation"
+        },
+        {
+            "hook": "action:config.set",
+            "method": "resetAPI"
         }
     ],
     "staticDirs": {
