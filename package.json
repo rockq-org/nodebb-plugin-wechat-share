@@ -1,15 +1,22 @@
 {
-  "name": "nodebb-plugin-wechat-share",
-  "version": "0.1.1",
-  "description": "A Plugin that for wechat",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rockq-org/nodebb-plugin-wechat-share"
-  },
-  "dependencies": {
-    "wechat-api": "^1.27.1"
-  },
-  "nbbpm": {
-    "compatibility": "^0.7.0 || ^0.8.0 || ^0.9.0 || ^1.0.0"
-  }
+    "name": "nodebb-plugin-wechat-share",
+    "version": "0.1.1",
+    "description": "NodeBB Plugin for wechat",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rockq-org/nodebb-plugin-wechat-share"
+    },
+    "dependencies": {
+        "wechat-api": "^1.27.1"
+    },
+    "keywords": [
+        "nodebb",
+        "plugin",
+        "wechat"
+    ],
+    "license": "GPL v2",
+    "author": "Mukaiu <mukaiu@outlook.com>",
+    "nbbpm": {
+        "compatibility": "^0.7.0 || ^0.8.0 || ^0.9.0 || ^1.0.0"
+    }
 }
