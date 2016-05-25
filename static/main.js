@@ -12,7 +12,7 @@ $(function () {
                 var share = {
                     url: location.href,
                     title: title,
-                    imgUrl: pic && pic.src || 'http://qn-rockq1.rockq.org/FrTXlrBXKf_03tPWg6lWcDRdjHST'
+                    imgUrl: pic && pic.src || 'https://qn-rockq1.rockq.org/FlajhRLLsVtYlKs5tuuf0MUSgbWA'
                 };
 
                 var desc = $($('.content p')[0]).text();
