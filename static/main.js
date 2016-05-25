@@ -2,7 +2,7 @@ $(function () {
     if (!navigator.userAgent.match(/MicroMessenger/i))
         return;
 
-    require(['http://res.wx.qq.com/open/js/jweixin-1.1.0.js'], function (jweixin) {
+    require(['https://res.wx.qq.com/open/js/jweixin-1.1.0.js'], function (jweixin) {
         $.post('/api/wechat-sdk', { url: location.href }).done(function (config) {
             jweixin.config(config);
 
